@@ -26,7 +26,6 @@ imagen varchar2(1000), -- link de la imagen
 datasheet varchar2(1000), -- link datasheet
 nro_pieza varchar2(200) not null, -- ej: KSH13005
 categoria varchar2(100) not null, -- ej: sensor, circuito integrado, transistor,etc
-nombre varchar2(100) not null, -- ej:transistor bjt
 descripcion varchar2(200) not null, -- ej:transistor bjt npn
 fabricante varchar2(100) not null, -- ej: SHANTOU HUASHAN, generico
 stock char(200) not null, -- ej: 100, 200, etc
