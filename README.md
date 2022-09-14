@@ -17,23 +17,10 @@
 
 </br>
 
-### Registros de Algunas Tablas
 
 #### Tabla `componentes`
 
 ![Index app](https://github.com/andresWeitzel/db_microelectronica_Oracle/blob/master/doc/componentes_electronicos.png)
-
-
-#### Tabla `componentes_detalles`
-
-![Index app](https://github.com/andresWeitzel/db_microelectronica_Oracle/blob/master/doc/detalles_componentes.png)
-
-
-#### Tabla `componentes_transistores_bipolares`
-
-![Index app](https://github.com/andresWeitzel/db_microelectronica_Oracle/blob/master/doc/transistores_bipolares.png)
-
-
 
 
 ## Más Información
@@ -203,12 +190,13 @@ grant create sequence to admin_microelectronica;
 
 #### 1.5) Conexión del Usuario admin_microelectronica para nuestra db en Oracle 
 * Click sobre Nueva Conexión.
-    * --> En `Name` colocamos `db_microelectronica`
+    * --> En `Name` colocamos `microdb_microelectronica`
     * --> En `Usuario` colocamos el nombre del usuario creado `admin_microelectronica`
     * --> En `Contraseña` colocamos  la contraselña del usuario creado `admin_microelectronica`
     * --> El resto lo dejamos todo por defecto ( Host, Port, etc ).
-    * --> Testear la conexión con el boton `Probar` o `Test`
-    * --> Por último click sobre el botón conectar, luego se pedirá Usuario y Contraseña, ingresar
+    * --> Testear la conexión con el boton `probar` o `test`, comprobar conexión establecida.
+    * --> Por último click sobre el botón `conectar`.
+    * --> luego se pedirá Usuario y Contraseña, ingresar.
     * --> Ya está la conexión configurada.
 
 
