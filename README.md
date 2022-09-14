@@ -12,7 +12,7 @@
 
 ### Diagrama Entidad Relación  `db_microelectronica`
 
-![Index app](https://github.com/andresWeitzel/db_microelectronica_Oracle/blob/master/doc/db_microelectronica_DER.png)
+![Index app](https://github.com/andresWeitzel/db_microelectronica_OracleXE/blob/master/doc/DER_componentes.png)
 
 
 </br>
@@ -20,7 +20,7 @@
 
 #### Tabla `componentes`
 
-![Index app](https://github.com/andresWeitzel/db_microelectronica_Oracle/blob/master/doc/componentes_electronicos.png)
+![Index app](https://github.com/andresWeitzel/db_microelectronica_OracleXE/blob/master/doc/componentes_electronicos.png)
 
 
 ## Más Información
