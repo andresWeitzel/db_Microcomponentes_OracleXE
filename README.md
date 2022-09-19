@@ -139,7 +139,7 @@ alter session set "_ORACLE_SCRIPT"=true;
 * Creamos el Usuario administradores con su Contraseña..
 ```sql
 -- == CREACIÓN DE USUARIO ==
-create user admin_microelectronica identified by admin_microelectronica
+create user admin_microfront_microelec identified by admin_microfront_microelec
 ```
 * No colocamos las ; ya que es una linea de un comando que lo analizaremos por partes
 * Creamos el tablespace por defecto, que es la ubicación de almacenamiento donde se pueden guardar los datos/objetos de la base de datos y el tablespace temporal, para guardar los datos en sesion, cuando se desloguee el usuario estos datos se eliminan. Por último el limite de datos para el mismo, en este caso ilimitado, pero depende el area del usuario se le asignará un tamaño fijo
@@ -152,12 +152,12 @@ quota unlimited on system;
 
 ```sql
 -- == PRIVILEGIOS DEL USUARIO ==
-grant create session to admin_microelectronica;
-grant create table to admin_microelectronica;
-grant create view to admin_microelectronica;
-grant create trigger to admin_microelectronica;
-grant create procedure to admin_microelectronica;
-grant create sequence to admin_microelectronica;
+grant create session to admin_microfront_microelec;
+grant create table to admin_microfront_microelec;
+grant create view to admin_microfront_microelec;
+grant create trigger to admin_microfront_microelec;
+grant create procedure to admin_microfront_microelec;
+grant create sequence to admin_microfront_microelec;
 
 
 ```
@@ -170,19 +170,19 @@ alter session set "_ORACLE_SCRIPT"=true;
 drop user administradores cascade;
 
 -- == CREACIÓN DE USUARIO ==
-create user admin_microelectronica identified by admin_microelectronica
+create user admin_microfront_microelec identified by admin_microfront_microelec
 default tablespace system 
 temporary tablespace temp
 quota unlimited on system;
 
 
 -- == PRIVILEGIOS DEL USUARIO ==
-grant create session to admin_microelectronica;
-grant create table to admin_microelectronica;
-grant create view to admin_microelectronica;
-grant create trigger to admin_microelectronica;
-grant create procedure to admin_microelectronica;
-grant create sequence to admin_microelectronica;
+grant create session to admin_microfront_microelec;
+grant create table to admin_microfront_microelec;
+grant create view to admin_microfront_microelec;
+grant create trigger to admin_microfront_microelec;
+grant create procedure to admin_microfront_microelec;
+grant create sequence to admin_microfront_microelec;
 
 
 
@@ -191,8 +191,8 @@ grant create sequence to admin_microelectronica;
 #### 1.5) Conexión del Usuario admin_microelectronica para nuestra db en Oracle 
 * Click sobre Nueva Conexión.
     * --> En `Name` colocamos `microdb_microelectronica`
-    * --> En `Usuario` colocamos el nombre del usuario creado `admin_microelectronica`
-    * --> En `Contraseña` colocamos  la contraselña del usuario creado `admin_microelectronica`
+    * --> En `Usuario` colocamos el nombre del usuario creado `admin_microfront_microelec`
+    * --> En `Contraseña` colocamos  la contraselña del usuario creado `admin_microfront_microelec`
     * --> El resto lo dejamos todo por defecto ( Host, Port, etc ).
     * --> Testear la conexión con el boton `probar` o `test`, comprobar conexión establecida.
     * --> Por último click sobre el botón `conectar`.
