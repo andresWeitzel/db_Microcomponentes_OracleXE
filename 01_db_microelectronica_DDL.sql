@@ -10,17 +10,17 @@
 drop table componentes cascade constraints;
 
 -- ELIMINAMOS TODAS LAS SECUENCIAS AUTO INCREMENTABLES ID 
-drop sequence id_seq_comp;
+drop sequence id_seq_comp_microelec;
 
 -- CREAMOS LAS SECUENCIAS AUTOINCREMENTABLES ID
-create sequence id_seq_comp start with 1 increment by 1 nocache nocycle;
+create sequence id_seq_comp_microelec start with 1 increment by 1 nocache nocycle;
 
 
 
 
 create table componentes(
 	
-id      char(2000)  default id_seq_comp.nextval  not null,
+id      char(2000)  default id_seq_comp_microelec.nextval  not null,
 codigo varchar2(100) not null, -- ej: mh-r-447y8
 imagen varchar2(1000), -- link de la imagen
 datasheet varchar2(1000), -- link datasheet

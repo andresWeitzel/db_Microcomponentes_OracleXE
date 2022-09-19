@@ -12,7 +12,7 @@ delete from  componentes cascade ;
 
 
 -- REESTABLECEMOS LAS SECUENCIAS
-alter sequence id_seq_comp restart;
+alter sequence id_seq_comp_microelec restart;
 
 
 -- ---------------------------------------------------------------------------
